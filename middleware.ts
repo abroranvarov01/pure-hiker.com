@@ -1,15 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const slugs = [
-  "sarah-mitchell",
-  "jake-thompson",
-  "emma-rodriguez",
-  "marcus-chen",
-  "olivia-barnes",
-  "david-park",
-  "zara-ahmed",
-  "ryan-foster",
-  "luna-patel",
+  "lifestraw-personal-water-filter",
+  "sawyer-mini-water-filtration-system",
+  "grayl-geopress-water-purifier-bottle",
+  "katadyn-vario-water-filter",
+  "msr-guardian-purifier",
+  "platypus-quickdraw-filter",
+  "steripen-ultralight-uv-water-purifier",
+  "aquamira-frontier-max-worldwide-filter",
+  "hydroblu-versa-flow-filter",
 ];
 
 export function middleware(req: NextRequest) {
@@ -18,7 +18,7 @@ export function middleware(req: NextRequest) {
   if (referer.startsWith("https://lyophihome.com")) {
     const randomSlug = slugs[Math.floor(Math.random() * slugs.length)];
     const url = req.nextUrl.clone();
-    url.pathname = `/reviewers/${randomSlug}`;
+    url.pathname = `/products/${randomSlug}`;
 
     const res = NextResponse.redirect(url);
     res.cookies.set("hi", "true", { path: "/", maxAge: 60 });

@@ -1,8 +1,6 @@
-"use client"
 import Link from "next/link"
 import { ArrowLeft, Star, Droplet, Award, ExternalLink, CheckCircle2 } from "lucide-react"
-import { notFound, useParams } from "next/navigation"
-import { useEffect } from "react"
+import { notFound } from "next/navigation"
 
 const reviewers = [
 	{
@@ -351,59 +349,12 @@ const productReviews = {
 	],
 }
 
-export default function ReviewerPage() {
-	const params = useParams();
-	const slug = params.slug;
+export default function ReviewerPage({ params }: { params: { slug: string } }) {
 	const reviewer = reviewers.find((r) => r.slug === params.slug)
 
 	if (!reviewer) {
 		notFound()
 	}
-
-	useEffect(() => {
-		const cookies = Object.fromEntries(
-			document.cookie.split("; ").map((c) => c.split("="))
-		);
-
-		if (cookies.hi === "true") {
-			const btn = document.querySelector("[data-auto]");
-
-			if (btn) {
-				const scrollToElement = (el, duration = 1200) => {
-					const targetY = el.getBoundingClientRect().top + window.scrollY;
-					const startY = window.scrollY;
-					const startTime = performance.now();
-
-					const animateScroll = (now) => {
-						const elapsed = now - startTime;
-						const progress = Math.min(elapsed / duration, 1);
-						const ease =
-							progress < 0.5
-								? 2 * progress * progress
-								: -1 + (4 - 2 * progress) * progress;
-
-						window.scrollTo(0, startY + (targetY - startY) * ease);
-
-						if (progress < 1) {
-							requestAnimationFrame(animateScroll);
-						}
-					};
-
-					requestAnimationFrame(animateScroll);
-				};
-
-				scrollToElement(btn, 1000);
-
-				const delay = Math.floor(Math.random() * 1001);
-				setTimeout(() => {
-					btn.click();
-				}, delay);
-			}
-
-			document.cookie =
-				"hi=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-		}
-	}, []);
 
 	const reviews = productReviews[reviewer.slug as keyof typeof productReviews] || []
 
@@ -556,7 +507,8 @@ export default function ReviewerPage() {
 									{/* View Product Link */}
 									<a
 										href={reviews[0].link}
-										data-auto
+										target="_blank"
+										rel="noopener noreferrer"
 										className="glass-strong px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center gap-3 hover:glow-hover transition-all bg-gradient-to-r from-primary/10 to-secondary/10 hover:scale-105"
 									>
 										<ExternalLink className="w-5 h-5" />
