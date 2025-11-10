@@ -4,117 +4,117 @@ import { notFound } from "next/navigation"
 
 const reviewers = [
 	{
-		name: "Sarah Mitchell",
-		slug: "sarah-mitchell",
+		name: "Alice Johnson",
+		slug: "alice-johnson",
 		specialty: "Ultralight Backpacker",
 		bio: "15+ years hiking the PCT and AT. Tested over 50 water filters in extreme conditions.",
 		experience: "15 years",
 		reviews: 127,
 		image: "/female-hiker-outdoor-portrait.jpg",
 		fullBio:
-			"Sarah has completed the Pacific Crest Trail three times and the Appalachian Trail twice. Her expertise in ultralight backpacking has made her one of the most trusted voices in the hiking community. She's tested water filters in deserts, mountains, and everything in between.",
+			"Alice has completed the Pacific Crest Trail three times and the Appalachian Trail twice. Her expertise in ultralight backpacking has made her one of the most trusted voices in the hiking community. She's tested water filters in deserts, mountains, and everything in between.",
 		expertise: ["Ultralight Gear", "Long-Distance Hiking", "Desert Conditions", "Mountain Streams"],
 	},
 	{
-		name: "Jake Thompson",
-		slug: "jake-thompson",
+		name: "Michael Smith",
+		slug: "michael-smith",
 		specialty: "Survival Expert",
 		bio: "Former military survival instructor. Specializes in emergency water purification systems.",
 		experience: "12 years",
 		reviews: 89,
 		image: "/male-survival-expert-outdoor-portrait.jpg",
 		fullBio:
-			"Jake spent 8 years as a military survival instructor before transitioning to outdoor gear consulting. His focus on reliability and durability in extreme conditions makes his reviews invaluable for serious adventurers.",
+			"Michael spent 8 years as a military survival instructor before transitioning to outdoor gear consulting. His focus on reliability and durability in extreme conditions makes his reviews invaluable for serious adventurers.",
 		expertise: ["Emergency Preparedness", "Extreme Conditions", "Military-Grade Gear", "Water Safety"],
 	},
 	{
-		name: "Emma Rodriguez",
-		slug: "emma-rodriguez",
+		name: "Sophia Martinez",
+		slug: "sophia-martinez",
 		specialty: "Adventure Photographer",
 		bio: "Documenting remote expeditions worldwide. Relies on portable filtration for 6-month trips.",
 		experience: "8 years",
 		reviews: 64,
 		image: "/female-photographer-hiking-portrait.jpg",
 		fullBio:
-			"Emma's photography expeditions take her to the most remote corners of the planet. She needs water filtration systems that work reliably for months at a time without resupply options.",
+			"Sophia's photography expeditions take her to the most remote corners of the planet. She needs water filtration systems that work reliably for months at a time without resupply options.",
 		expertise: ["Remote Expeditions", "Long-Term Reliability", "International Travel", "Compact Systems"],
 	},
 	{
-		name: "Marcus Chen",
-		slug: "marcus-chen",
+		name: "Ethan Brown",
+		slug: "ethan-brown",
 		specialty: "Trail Runner",
 		bio: "Ultra-marathon runner covering 100+ miles weekly. Expert in lightweight hydration solutions.",
 		experience: "10 years",
 		reviews: 95,
 		image: "/male-trail-runner-outdoor-portrait.jpg",
 		fullBio:
-			"Marcus runs ultra-marathons in some of the most challenging terrain. His reviews focus on speed, weight, and ease of use while on the move.",
+			"Ethan runs ultra-marathons in some of the most challenging terrain. His reviews focus on speed, weight, and ease of use while on the move.",
 		expertise: ["Ultralight Systems", "Fast Flow Rates", "On-the-Go Filtration", "Endurance Events"],
 	},
 	{
-		name: "Olivia Barnes",
-		slug: "olivia-barnes",
+		name: "Isabella Green",
+		slug: "isabella-green",
 		specialty: "Family Camping Guide",
 		bio: "Leading family outdoor adventures for a decade. Focuses on safe, easy-to-use filters.",
 		experience: "11 years",
 		reviews: 73,
 		image: "/female-camping-guide-outdoor-portrait.jpg",
 		fullBio:
-			"Olivia specializes in making outdoor adventures accessible and safe for families. Her reviews prioritize ease of use, safety features, and reliability for group settings.",
+			"Isabella specializes in making outdoor adventures accessible and safe for families. Her reviews prioritize ease of use, safety features, and reliability for group settings.",
 		expertise: ["Family-Friendly Gear", "Group Camping", "Safety First", "Easy Maintenance"],
 	},
 	{
-		name: "David Park",
-		slug: "david-park",
+		name: "Liam Wilson",
+		slug: "liam-wilson",
 		specialty: "Mountaineering Pro",
 		bio: "Summited 6 of the 7 peaks. Tests filters at extreme altitudes and temperatures.",
 		experience: "14 years",
 		reviews: 108,
 		image: "/male-mountaineer-outdoor-portrait.jpg",
 		fullBio:
-			"David's mountaineering career has taken him to six of the seven summits. He tests gear in freezing temperatures and at extreme altitudes where equipment failure isn't an option.",
+			"Liam's mountaineering career has taken him to six of the seven summits. He tests gear in freezing temperatures and at extreme altitudes where equipment failure isn't an option.",
 		expertise: ["High Altitude", "Freezing Conditions", "Extreme Durability", "Technical Performance"],
 	},
 	{
-		name: "Zara Ahmed",
-		slug: "zara-ahmed",
+		name: "Mia Taylor",
+		slug: "mia-taylor",
 		specialty: "Bikepacking Specialist",
 		bio: "Cross-country cyclist and gear reviewer. Prioritizes compact, durable filtration systems.",
 		experience: "7 years",
 		reviews: 56,
 		image: "/female-cyclist-outdoor-portrait.jpg",
 		fullBio:
-			"Zara has bikepacked across multiple continents, covering thousands of miles. Her reviews focus on compact, durable systems that can handle daily use and rough handling.",
+			"Mia has bikepacked across multiple continents, covering thousands of miles. Her reviews focus on compact, durable systems that can handle daily use and rough handling.",
 		expertise: ["Bikepacking", "Compact Design", "Daily Use", "Durability Testing"],
 	},
 	{
-		name: "Ryan Foster",
-		slug: "ryan-foster",
+		name: "Noah Johnson",
+		slug: "noah-johnson",
 		specialty: "Wilderness Medic",
 		bio: "Backcountry EMT with focus on water-borne illness prevention and treatment.",
 		experience: "13 years",
 		reviews: 82,
 		image: "/male-medic-outdoor-portrait.jpg",
 		fullBio:
-			"Ryan's medical background gives him unique insight into water safety and filtration effectiveness. His reviews include detailed analysis of pathogen removal and health considerations.",
+			"Noah's medical background gives him unique insight into water safety and filtration effectiveness. His reviews include detailed analysis of pathogen removal and health considerations.",
 		expertise: ["Water Safety", "Pathogen Removal", "Medical Perspective", "Health Standards"],
 	},
 	{
-		name: "Luna Patel",
-		slug: "luna-patel",
+		name: "Ava Patel",
+		slug: "ava-patel",
 		specialty: "Solo Thru-Hiker",
 		bio: "Completed CDT, PCT, and AT solo. Advocates for reliable, lightweight water solutions.",
 		experience: "9 years",
 		reviews: 71,
 		image: "/female-solo-hiker-outdoor-portrait.jpg",
 		fullBio:
-			"Luna has completed the Triple Crown of hiking solo. Her reviews emphasize reliability, weight, and ease of use for solo adventurers who can't afford equipment failure.",
+			"Ava has completed the Triple Crown of hiking solo. Her reviews emphasize reliability, weight, and ease of use for solo adventurers who can't afford equipment failure.",
 		expertise: ["Solo Hiking", "Triple Crown", "Self-Reliance", "Lightweight Systems"],
 	},
 ]
 
 const productReviews = {
-	"sarah-mitchell": [
+	"alice-johnson": [
 		{
 			productName: "LifeStraw Personal Water Filter",
 			rating: 5,
@@ -151,7 +151,7 @@ const productReviews = {
 			link: "https://www.amazon.com/GEAR-AID-42200-Aquamira-Worldwide/dp/B00SCVHU34",
 		},
 	],
-	"jake-thompson": [
+	"michael-smith": [
 		{
 			productName: "MSR Guardian Purifier",
 			rating: 5,
@@ -183,7 +183,7 @@ const productReviews = {
 			link: "https://www.amazon.com/GEAR-AID-42200-Aquamira-Worldwide/dp/B00SCVHU34",
 		},
 	],
-	"emma-rodriguez": [
+	"sophia-martinez": [
 		{
 			productName: "Sawyer MINI Water Filtration System",
 			rating: 5,
@@ -205,7 +205,7 @@ const productReviews = {
 			link: "https://www.amazon.com/GEAR-AID-42200-Aquamira-Worldwide/dp/B00SCVHU34",
 		},
 	],
-	"marcus-chen": [
+	"ethan-brown": [
 		{
 			productName: "Katadyn Vario Water Filter",
 			rating: 5,
@@ -227,7 +227,7 @@ const productReviews = {
 			link: "https://www.amazon.com/GEAR-AID-42200-Aquamira-Worldwide/dp/B00SCVHU34",
 		},
 	],
-	"olivia-barnes": [
+	"isabella-green": [
 		{
 			productName: "GRAYL GeoPress Purifier",
 			rating: 5,
@@ -249,7 +249,7 @@ const productReviews = {
 			link: "https://www.amazon.com/GEAR-AID-42200-Aquamira-Worldwide/dp/B00SCVHU34",
 		},
 	],
-	"david-park": [
+	"liam-wilson": [
 		{
 			productName: "MSR Guardian Purifier",
 			rating: 5,
@@ -271,7 +271,7 @@ const productReviews = {
 			link: "https://www.amazon.com/GEAR-AID-42200-Aquamira-Worldwide/dp/B00SCVHU34",
 		},
 	],
-	"zara-ahmed": [
+	"mia-taylor": [
 		{
 			productName: "Sawyer MINI Water Filtration System",
 			rating: 5,
@@ -293,7 +293,7 @@ const productReviews = {
 			link: "https://www.amazon.com/GEAR-AID-42200-Aquamira-Worldwide/dp/B00SCVHU34",
 		},
 	],
-	"ryan-foster": [
+	"noah-johnson": [
 		{
 			productName: "GRAYL GeoPress Purifier",
 			rating: 5,
@@ -325,7 +325,7 @@ const productReviews = {
 			link: "https://www.amazon.com/GEAR-AID-42200-Aquamira-Worldwide/dp/B00SCVHU34",
 		},
 	],
-	"luna-patel": [
+	"ava-patel": [
 		{
 			productName: "Sawyer MINI Water Filtration System",
 			rating: 5,

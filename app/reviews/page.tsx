@@ -2,66 +2,66 @@ import Link from "next/link"
 import { ArrowLeft, Quote, Star } from "lucide-react"
 
 const detailedReviews = [
-  {
-    text: "It feels like drinking from a cloud.",
-    fullReview:
-      "I've been using the LifeStraw Peak Series for 6 months now on all my trail runs. The water tastes incredibly clean and fresh, no plastic aftertaste at all. It's so light I barely notice it in my pack. The flow rate is excellent even when I'm exhausted and need quick hydration. Absolutely worth every penny.",
-    author: "Sarah M.",
-    role: "Trail Runner",
-    rating: 5,
-    product: "LifeStraw Peak Series",
-    date: "2 months ago",
-  },
-  {
-    text: "Small, light, and saves me every time I hike.",
-    fullReview:
-      "The Sawyer Mini has been my trusted companion on countless backpacking trips. It's incredibly compact and weighs almost nothing. I've used it in streams, lakes, and even questionable water sources without any issues. The squeeze bag system is intuitive and the filter lasts forever. My only wish is that the flow rate was slightly faster, but that's a minor trade-off for such reliability.",
-    author: "James K.",
-    role: "Backpacker",
-    rating: 5,
-    product: "Sawyer Mini",
-    date: "3 weeks ago",
-  },
-  {
-    text: "Clean water has never looked this good.",
-    fullReview:
-      "As someone who photographs outdoor adventures, I appreciate gear that's both functional and beautiful. The GRAYL GeoPress is stunning and performs flawlessly. The one-press purification is genius - 8 seconds and you have clean water. I've used it in remote locations across three continents. It removes viruses too, which gives me peace of mind in developing countries.",
-    author: "Emma L.",
-    role: "Adventure Photographer",
-    rating: 5,
-    product: "GRAYL GeoPress",
-    date: "1 month ago",
-  },
-  {
-    text: "Game changer for my thru-hiking adventures.",
-    fullReview:
-      "I completed the Pacific Crest Trail with the Katadyn BeFree and it never let me down. The collapsible flask design is perfect for long-distance hiking. It filters fast, packs down small, and the 1L capacity is ideal. After 2,650 miles, it's still going strong. The only maintenance needed was occasional backflushing. Highly recommend for any serious hiker.",
-    author: "Marcus T.",
-    role: "Thru-Hiker",
-    rating: 5,
-    product: "Katadyn BeFree",
-    date: "5 months ago",
-  },
-  {
-    text: "Reliable protection for international travel.",
-    fullReview:
-      "The MSR Guardian is my go-to for international expeditions. Yes, it's heavier than ultralight options, but the pump system and virus protection are unmatched. I've used it in Southeast Asia, South America, and Africa without a single issue. The self-cleaning feature is brilliant. Worth the weight for the peace of mind it provides.",
-    author: "Dr. Rachel P.",
-    role: "Expedition Leader",
-    rating: 5,
-    product: "MSR Guardian",
-    date: "4 months ago",
-  },
-  {
-    text: "Perfect balance of speed and portability.",
-    fullReview:
-      "The Platypus QuickDraw is my favorite filter for fast-paced hiking. It attaches directly to my water bottle and filters as I drink. The flow rate is impressive and it's incredibly easy to use. I love that I can also use it with a hydration bladder. After 6 months of regular use, it's still performing like new. Great value for money.",
-    author: "Alex W.",
-    role: "Day Hiker",
-    rating: 5,
-    product: "Platypus QuickDraw",
-    date: "3 months ago",
-  },
+	{
+		text: "It feels like drinking from a cloud.",
+		fullReview:
+			"I've been using the LifeStraw Peak Series for 6 months now on all my trail runs. The water tastes incredibly clean and fresh, no plastic aftertaste at all. It's so light I barely notice it in my pack. The flow rate is excellent even when I'm exhausted and need quick hydration. Absolutely worth every penny.",
+		author: "Emily R.",
+		role: "Trail Runner",
+		rating: 5,
+		product: "LifeStraw Peak Series",
+		date: "2 months ago",
+	},
+	{
+		text: "Small, light, and saves me every time I hike.",
+		fullReview:
+			"The Sawyer Mini has been my trusted companion on countless backpacking trips. It's incredibly compact and weighs almost nothing. I've used it in streams, lakes, and even questionable water sources without any issues. The squeeze bag system is intuitive and the filter lasts forever. My only wish is that the flow rate was slightly faster, but that's a minor trade-off for such reliability.",
+		author: "Michael S.",
+		role: "Backpacker",
+		rating: 5,
+		product: "Sawyer Mini",
+		date: "3 weeks ago",
+	},
+	{
+		text: "Clean water has never looked this good.",
+		fullReview:
+			"As someone who photographs outdoor adventures, I appreciate gear that's both functional and beautiful. The GRAYL GeoPress is stunning and performs flawlessly. The one-press purification is genius - 8 seconds and you have clean water. I've used it in remote locations across three continents. It removes viruses too, which gives me peace of mind in developing countries.",
+		author: "Sophie H.",
+		role: "Adventure Photographer",
+		rating: 5,
+		product: "GRAYL GeoPress",
+		date: "1 month ago",
+	},
+	{
+		text: "Game changer for my thru-hiking adventures.",
+		fullReview:
+			"I completed the Pacific Crest Trail with the Katadyn BeFree and it never let me down. The collapsible flask design is perfect for long-distance hiking. It filters fast, packs down small, and the 1L capacity is ideal. After 2,650 miles, it's still going strong. The only maintenance needed was occasional backflushing. Highly recommend for any serious hiker.",
+		author: "David L.",
+		role: "Thru-Hiker",
+		rating: 5,
+		product: "Katadyn BeFree",
+		date: "5 months ago",
+	},
+	{
+		text: "Reliable protection for international travel.",
+		fullReview:
+			"The MSR Guardian is my go-to for international expeditions. Yes, it's heavier than ultralight options, but the pump system and virus protection are unmatched. I've used it in Southeast Asia, South America, and Africa without a single issue. The self-cleaning feature is brilliant. Worth the weight for the peace of mind it provides.",
+		author: "Dr. Anna M.",
+		role: "Expedition Leader",
+		rating: 5,
+		product: "MSR Guardian",
+		date: "4 months ago",
+	},
+	{
+		text: "Perfect balance of speed and portability.",
+		fullReview:
+			"The Platypus QuickDraw is my favorite filter for fast-paced hiking. It attaches directly to my water bottle and filters as I drink. The flow rate is impressive and it's incredibly easy to use. I love that I can also use it with a hydration bladder. After 6 months of regular use, it's still performing like new. Great value for money.",
+		author: "Chris B.",
+		role: "Day Hiker",
+		rating: 5,
+		product: "Platypus QuickDraw",
+		date: "3 months ago",
+	},
 ]
 
 export default function ReviewsPage() {

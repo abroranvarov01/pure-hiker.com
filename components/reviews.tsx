@@ -1,21 +1,21 @@
 import { Quote } from "lucide-react"
 
 const reviews = [
-  {
-    text: "It feels like drinking from a cloud.",
-    author: "Sarah M.",
-    role: "Trail Runner",
-  },
-  {
-    text: "Small, light, and saves me every time I hike.",
-    author: "James K.",
-    role: "Backpacker",
-  },
-  {
-    text: "Clean water has never looked this good.",
-    author: "Emma L.",
-    role: "Adventure Photographer",
-  },
+	{
+		text: "It feels like drinking from a cloud.",
+		author: "Aisha R.",
+		role: "Trail Runner",
+	},
+	{
+		text: "Small, light, and saves me every time I hike.",
+		author: "Mateo S.",
+		role: "Backpacker",
+	},
+	{
+		text: "Clean water has never looked this good.",
+		author: "Olivia P.",
+		role: "Adventure Photographer",
+	},
 ]
 
 export function Reviews() {
